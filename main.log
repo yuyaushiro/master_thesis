@@ -1,9 +1,9 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  18 JAN 2020 00:08
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  18 JAN 2020 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/yuya/latex_ws/master_thesis_writing/main
-(/Users/yuya/latex_ws/master_thesis_writing/main.tex
+**/Users/yuya/latex_ws/master_thesis/main
+(/Users/yuya/latex_ws/master_thesis/main.tex
 pLaTeX2e <2019-10-01u02>+1 (based on LaTeX2e <2019-10-01> patch level 3)
 (/usr/local/texlive/2019/texmf-dist/tex/platex/jsclasses/jsbook.cls
 Document Class: jsbook 2019/07/25 jsclasses (okumura, texjporg)
@@ -294,7 +294,11 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ]
 第3章
-[9] [10] [11]) [12]
+[9] [10] [11]
+
+LaTeX Warning: Citation `kaelbling1998' on page 12 undefined on input line 159.
+
+) [12] [13]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux))
@@ -303,12 +307,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2212 strings out of 492749
- 25655 string characters out of 6140097
- 95732 words of memory out of 5000000
- 6642 multiletter control sequences out of 15000+600000
+ 2214 strings out of 492749
+ 25660 string characters out of 6140097
+ 95754 words of memory out of 5000000
+ 6644 multiletter control sequences out of 15000+600000
  16739 words of font info for 81 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 30i,9n,31p,416b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (12 pages, 34880 bytes).
+Output written on main.dvi (13 pages, 37380 bytes).
