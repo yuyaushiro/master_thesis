@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  18 JAN 2020 21:15
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  19 JAN 2020 18:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -152,7 +152,7 @@ LaTeX Info: Redefining \bm on input line 209.
 
 
 Writing index file main.idx
-(./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux))
+(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -232,26 +232,26 @@ LaTeX Warning: Citation `roswiki_amcl' on page 2 undefined on input line 40.
 
 LaTeX Warning: Citation `夏迫2016つくばチャレンジ' on page 2 undefined on input line 42.
 
-
-LaTeX Warning: Citation `kaelbling1998' on page 2 undefined on input line 88.
-
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 90.
+(Font)              scaled to size 6.47278pt on input line 85.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 90.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 90.
+(Font)              scaled to size 4.62341pt on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 90.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 90.
+(Font)              scaled to size 6.47278pt on input line 85.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 90.
+(Font)              scaled to size 4.62341pt on input line 85.
  [2]
+
+LaTeX Warning: Citation `kaelbling1998' on page 3 undefined on input line 88.
+
 
 LaTeX Warning: Citation `roy1999b' on page 3 undefined on input line 91.
 
@@ -268,9 +268,9 @@ LaTeX Warning: Citation `ueda2015' on page 3 undefined on input line 98.
 LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 103.
 
 [3]) [4]
-\openout2 = `./mcl.aux'.
+\openout2 = `./pomdp.aux'.
 
- (./mcl.tex
+ (./pomdp.tex
 第2章
 [5
 
@@ -278,41 +278,54 @@ LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 10
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
+(Font)              scaled to size 11.09619pt on input line 39.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
+(Font)              scaled to size 11.09619pt on input line 39.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
+(Font)              scaled to size 11.09619pt on input line 39.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 74.
- [6]) [7]
-\openout2 = `./pomdp.aux'.
+(Font)              scaled to size 11.09619pt on input line 39.
+ [6] [7]
 
- (./pomdp.tex [8
+LaTeX Warning: Citation `kaelbling1998' on page 8 undefined on input line 159.
+
+[8]) [9]
+\openout2 = `./mcl.aux'.
+
+ (./mcl.tex [10
 
 
 
 ]
 第3章
-[9] [10] [11]
+[11] [12]
 
-LaTeX Warning: Citation `kaelbling1998' on page 12 undefined on input line 159.
+LaTeX Warning: Reference `chapter:method' on page 13 undefined on input line 134.
 
-) [12] [13]
+) [13]
+\openout2 = `./method.aux'.
+
+ (./method.tex [14
+
+
+
+]
+第4章
+) [15]
 No file main.bbl.
 No file main.ind.
-(./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux))
+(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2214 strings out of 492749
- 25660 string characters out of 6140097
- 95754 words of memory out of 5000000
- 6644 multiletter control sequences out of 15000+600000
+ 2228 strings out of 492749
+ 25835 string characters out of 6140097
+ 96059 words of memory out of 5000000
+ 6651 multiletter control sequences out of 15000+600000
  16739 words of font info for 81 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 30i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (13 pages, 37380 bytes).
+Output written on main.dvi (15 pages, 40348 bytes).
