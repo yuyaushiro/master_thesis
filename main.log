@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  22 JAN 2020 22:47
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  23 JAN 2020 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,7 +267,14 @@ LaTeX Warning: Citation `ueda2015' on page 3 undefined on input line 106.
 
 LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 111.
 
-[3]) [4]
+[3]
+
+LaTeX Warning: Reference `chapter:evaluate' on page 4 undefined on input line 141.
+
+
+LaTeX Warning: Reference `chapter:conclution' on page 4 undefined on input line 142.
+
+) [4]
 \openout2 = `./pomdp.aux'.
 
  (./pomdp.tex
@@ -278,20 +285,20 @@ LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 11
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 39.
+(Font)              scaled to size 11.09619pt on input line 38.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 39.
+(Font)              scaled to size 11.09619pt on input line 38.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 39.
+(Font)              scaled to size 11.09619pt on input line 38.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 39.
+(Font)              scaled to size 11.09619pt on input line 38.
  [6] [7]
 
-LaTeX Warning: Citation `kaelbling1998' on page 8 undefined on input line 159.
+LaTeX Warning: Citation `kaelbling1998' on page 8 undefined on input line 158.
 
 [8]
 
-LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 166.
+LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 165.
 
 ) [9]
 \openout2 = `./mcl.aux'.
@@ -315,7 +322,7 @@ LaTeX Warning: Reference `chapter:method' on page 13 undefined on input line 134
 
 ]
 第4章
-) [15]
+[15]) [16]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
@@ -324,12 +331,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2227 strings out of 492749
- 25820 string characters out of 6140097
- 97048 words of memory out of 5000000
- 6650 multiletter control sequences out of 15000+600000
+ 2236 strings out of 492749
+ 25999 string characters out of 6140097
+ 97118 words of memory out of 5000000
+ 6659 multiletter control sequences out of 15000+600000
  16739 words of font info for 81 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  32i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (15 pages, 42500 bytes).
+Output written on main.dvi (16 pages, 45416 bytes).
