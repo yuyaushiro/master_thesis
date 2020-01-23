@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  23 JAN 2020 17:09
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  24 JAN 2020 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -152,7 +152,11 @@ LaTeX Info: Redefining \bm on input line 209.
 
 
 Writing index file main.idx
-(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
+(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux
+
+LaTeX Warning: Label `particles' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -269,6 +273,9 @@ LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 11
 
 [3]
 
+LaTeX Warning: Reference `chapter:mechod' on page 4 undefined on input line 140.
+
+
 LaTeX Warning: Reference `chapter:evaluate' on page 4 undefined on input line 141.
 
 
@@ -309,11 +316,7 @@ LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 165.
 
 ]
 第3章
-[11] [12]
-
-LaTeX Warning: Reference `chapter:method' on page 13 undefined on input line 134.
-
-) [13]
+[11] [12]) [13]
 \openout2 = `./method.aux'.
 
  (./method.tex [14
@@ -322,21 +325,28 @@ LaTeX Warning: Reference `chapter:method' on page 13 undefined on input line 134
 
 ]
 第4章
-[15] [16]) [17]
+[15] [16] [17]
+
+LaTeX Warning: Reference `equation:pfc' on page 18 undefined on input line 112.
+
+) [18]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 2236 strings out of 492749
- 25999 string characters out of 6140097
- 97118 words of memory out of 5000000
- 6659 multiletter control sequences out of 15000+600000
+ 2240 strings out of 492749
+ 26075 string characters out of 6140097
+ 97190 words of memory out of 5000000
+ 6663 multiletter control sequences out of 15000+600000
  16739 words of font info for 81 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  32i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (17 pages, 48872 bytes).
+Output written on main.dvi (18 pages, 52848 bytes).
