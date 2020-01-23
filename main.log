@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  24 JAN 2020 02:30
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  24 JAN 2020 02:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,7 +156,7 @@ Writing index file main.idx
 
 LaTeX Warning: Label `particles' multiply defined.
 
-))
+) (./evaluate.aux) (./conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -237,51 +237,41 @@ LaTeX Warning: Citation `roswiki_amcl' on page 2 undefined on input line 40.
 LaTeX Warning: Citation `夏迫2016つくばチャレンジ' on page 2 undefined on input line 42.
 
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 85.
+(Font)              scaled to size 6.47278pt on input line 64.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 85.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+(Font)              scaled to size 4.62341pt on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 85.
+(Font)              scaled to size 6.47278pt on input line 64.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 85.
+(Font)              scaled to size 4.62341pt on input line 64.
  [2]
 
-LaTeX Warning: Citation `kaelbling1998' on page 3 undefined on input line 88.
+LaTeX Warning: Citation `kaelbling1998' on page 3 undefined on input line 67.
 
 
-LaTeX Warning: Citation `roy1999b' on page 3 undefined on input line 91.
+LaTeX Warning: Citation `roy1999b' on page 3 undefined on input line 70.
 
 
-LaTeX Warning: Citation `littman1995' on page 3 undefined on input line 98.
+LaTeX Warning: Citation `littman1995' on page 3 undefined on input line 77.
 
 
-LaTeX Warning: Citation `ueda2003iros' on page 3 undefined on input line 103.
+LaTeX Warning: Citation `ueda2003iros' on page 3 undefined on input line 82.
 
 
-LaTeX Warning: Citation `ueda2015' on page 3 undefined on input line 106.
+LaTeX Warning: Citation `ueda2015' on page 3 undefined on input line 85.
 
 
-LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 111.
+LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 90.
 
-[3]
-
-LaTeX Warning: Reference `chapter:mechod' on page 4 undefined on input line 140.
-
-
-LaTeX Warning: Reference `chapter:evaluate' on page 4 undefined on input line 141.
-
-
-LaTeX Warning: Reference `chapter:conclution' on page 4 undefined on input line 142.
-
-) [4]
+[3]) [4]
 \openout2 = `./pomdp.aux'.
 
  (./pomdp.tex
@@ -292,20 +282,20 @@ LaTeX Warning: Reference `chapter:conclution' on page 4 undefined on input line 
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 38.
+(Font)              scaled to size 11.09619pt on input line 46.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 38.
+(Font)              scaled to size 11.09619pt on input line 46.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 38.
+(Font)              scaled to size 11.09619pt on input line 46.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 38.
+(Font)              scaled to size 11.09619pt on input line 46.
  [6] [7]
 
-LaTeX Warning: Citation `kaelbling1998' on page 8 undefined on input line 158.
+LaTeX Warning: Citation `kaelbling1998' on page 8 undefined on input line 166.
 
 [8]
 
-LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 165.
+LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 174.
 
 ) [9]
 \openout2 = `./mcl.aux'.
@@ -326,9 +316,27 @@ LaTeX Warning: Citation `littman1995' on page 9 undefined on input line 165.
 ]
 第4章
 [15] [16]) [17] [18]
+\openout2 = `./evaluate.aux'.
+
+ (./evaluate.tex
+第5章
+) [19
+
+
+
+]
+\openout2 = `./conclusion.aux'.
+
+ (./conclusion.tex [20
+
+
+
+]
+第6章
+) [21]
 No file main.bbl.
 No file main.ind.
-(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux))
+(./main.aux (./introduction.aux) (./pomdp.aux) (./mcl.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -337,12 +345,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2237 strings out of 492749
- 26017 string characters out of 6140097
- 97168 words of memory out of 5000000
- 6660 multiletter control sequences out of 15000+600000
+ 2261 strings out of 492749
+ 26378 string characters out of 6140097
+ 97796 words of memory out of 5000000
+ 6670 multiletter control sequences out of 15000+600000
  16739 words of font info for 81 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  32i,9n,31p,408b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (18 pages, 51780 bytes).
+Output written on main.dvi (21 pages, 52496 bytes).
