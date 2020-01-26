@@ -31,6 +31,10 @@ main.dvi: main.tex
 	mkdir -p inc
 	sed -e 's/。/. /g' -e 's/、/, /g' introduction.tex > inc/introduction.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' mcl.tex > inc/mcl.tex
+	sed -e 's/。/. /g' -e 's/、/, /g' pomdp.tex > inc/pomdp.tex
+	sed -e 's/。/. /g' -e 's/、/, /g' method.tex > inc/method.tex
+	sed -e 's/。/. /g' -e 's/、/, /g' evaluate.tex > inc/evaluate.tex
+	sed -e 's/。/. /g' -e 's/、/, /g' conclusion.tex > inc/conclusion.tex
 	$(TEXBIN) $(TEXFLAGS) tmp.tex
 	$(BIBBIN) $(BIBFLAGS) tmp.aux
 	$(MENDEXBIN) $(MENDEXFLAGS) tmp.idx

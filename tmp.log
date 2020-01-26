@@ -1,9 +1,10 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  26 JAN 2020 15:30
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  24 JAN 2020 11:53
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/yuya/latex_ws/master_thesis/main
-(/Users/yuya/latex_ws/master_thesis/main.tex
+**tmp.tex
+(./tmp.tex
 pLaTeX2e <2019-10-01u02>+1 (based on LaTeX2e <2019-10-01> patch level 3)
 (/usr/local/texlive/2019/texmf-dist/tex/platex/jsclasses/jsbook.cls
 Document Class: jsbook 2019/07/25 jsclasses (okumura, texjporg)
@@ -48,23 +49,28 @@ LaTeX Info: Redefining \LaTeX on input line 147.
 LaTeX Info: Redefining \LaTeXe on input line 200.
 )
 \heisei=\count92
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2019/11/16 v2.17d AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen124
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen125
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count93
@@ -104,41 +110,51 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2858.
 LaTeX Info: Redefining \] on input line 2859.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 105.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen133
 \Gin@req@width=\dimen134
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count105
 \float@exts=\toks21
 \float@box=\box45
 \@float@everytoks=\toks22
 \@floatcapt=\box46
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
 \symboldletters=\mathgroup8
@@ -148,16 +164,17 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
 \@indexfile=\write3
-\openout3 = `main.idx'.
+\openout3 = `tmp.idx'.
 
 
-Writing index file main.idx
-(./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux
+Writing index file tmp.idx
+(./tmp.aux (./inc/introduction.aux) (./inc/mcl.aux) (./inc/pomdp.aux)
+(./inc/method.aux
 
 LaTeX Warning: Label `particles' multiply defined.
 
-) (./evaluate.aux) (./conclusion.aux))
-\openout1 = `main.aux'.
+) (./inc/evaluate.aux) (./inc/conclusion.aux))
+\openout1 = `tmp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -186,11 +203,15 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 5.5481pt on input line 27.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
@@ -218,7 +239,8 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 30.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 30.
- (./main.toc
+
+(./tmp.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 2.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
@@ -237,12 +259,12 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 43.
  [3])
 \tf@toc=\write4
-\openout4 = `main.toc'.
+\openout4 = `tmp.toc'.
 
  [4]
-\openout2 = `./introduction.aux'.
+\openout2 = `inc/introduction.aux'.
 
- (./introduction.tex
+ (./inc/introduction.tex
 第1章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
@@ -260,58 +282,14 @@ LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
 (Font)              scaled to size 13.31541pt on input line 5.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 13.31541pt on input line 5.
-
-LaTeX Warning: Citation `thrun2005' on page 1 undefined on input line 24.
-
-
-LaTeX Warning: Citation `上田2007prob' on page 1 undefined on input line 24.
-
 [1
 
 
 
-]
+] [2] [3]) [4]
+\openout2 = `inc/mcl.aux'.
 
-LaTeX Warning: Citation `dellaert1999' on page 2 undefined on input line 40.
-
-
-LaTeX Warning: Citation `fox1999' on page 2 undefined on input line 40.
-
-
-LaTeX Warning: Citation `kalman1960' on page 2 undefined on input line 44.
-
-
-LaTeX Warning: Citation `quigley2009ros' on page 2 undefined on input line 46.
-
-
-LaTeX Warning: Citation `roswiki_amcl' on page 2 undefined on input line 46.
-
-
-LaTeX Warning: Citation `夏迫2016つくばチャレンジ' on page 2 undefined on input line 48.
-
-
-LaTeX Warning: Citation `kaelbling1998' on page 2 undefined on input line 69.
-
-[2]
-
-LaTeX Warning: Citation `roy1999b' on page 3 undefined on input line 72.
-
-
-LaTeX Warning: Citation `littman1995' on page 3 undefined on input line 79.
-
-
-LaTeX Warning: Citation `ueda2003iros' on page 3 undefined on input line 84.
-
-
-LaTeX Warning: Citation `ueda2015' on page 3 undefined on input line 87.
-
-
-LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 92.
-
-[3]) [4]
-\openout2 = `./mcl.aux'.
-
- (./mcl.tex
+ (./inc/mcl.tex
 第2章
 [5
 
@@ -319,69 +297,78 @@ LaTeX Warning: Citation `ueda2018searching' on page 3 undefined on input line 92
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 75.
+(Font)              scaled to size 11.09619pt on input line 74.
  [6]) [7]
-\openout2 = `./pomdp.aux'.
+\openout2 = `inc/pomdp.aux'.
 
- (./pomdp.tex [8
+ (./inc/pomdp.tex [8
 
 
 
 ]
 第3章
-[9] [10] [11]
+[9] [10] [11] [12]) [13]
+\openout2 = `inc/method.aux'.
 
-LaTeX Warning: Citation `kaelbling1998' on page 12 undefined on input line 166.
-
-[12]
-
-LaTeX Warning: Citation `littman1995' on page 13 undefined on input line 174.
-
-) [13]
-\openout2 = `./method.aux'.
-
- (./method.tex [14
+ (./inc/method.tex [14
 
 
 
 ]
 第4章
 [15] [16]) [17] [18]
-\openout2 = `./evaluate.aux'.
+\openout2 = `inc/evaluate.aux'.
 
- (./evaluate.tex
+ (./inc/evaluate.tex
 第5章
 ) [19
 
 
 
 ]
-\openout2 = `./conclusion.aux'.
+\openout2 = `inc/conclusion.aux'.
 
- (./conclusion.tex [20
+ (./inc/conclusion.tex [20
 
 
 
 ]
 第6章
-) [21]
-No file main.bbl.
-No file main.ind.
-(./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
+) [21] (./tmp.bbl [22
 
-LaTeX Warning: There were undefined references.
 
+]
+LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 6.
+LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <10> not available
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 6.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 53--56
+[]\OT1/cmr/m/n/10 Sebastian Thrun, Wol-fram Bur-gard, Di-
+ []
+
+) [24] (./tmp.ind [25
+
+
+
+]) (./tmp.aux (./inc/introduction.aux) (./inc/mcl.aux)
+(./inc/pomdp.aux) (./inc/method.aux) (./inc/evaluate.aux) (./inc/conclusion.aux
+))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2316 strings out of 492749
- 26983 string characters out of 6140097
- 98804 words of memory out of 5000000
- 6707 multiletter control sequences out of 15000+600000
- 25567 words of font info for 116 fonts, out of 8000000 for 9000
+ 2338 strings out of 492749
+ 27315 string characters out of 6140097
+ 98972 words of memory out of 5000000
+ 6724 multiletter control sequences out of 15000+600000
+ 25913 words of font info for 117 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 31i,9n,31p,408b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 31i,9n,31p,373b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (25 pages, 60496 bytes).
+Output written on tmp.dvi (29 pages, 70092 bytes).
