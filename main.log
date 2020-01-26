@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  26 JAN 2020 15:30
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  27 JAN 2020 00:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,13 +228,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 4.62341pt on input line 2.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 43.
+(Font)              scaled to size 9.24683pt on input line 44.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 43.
+(Font)              scaled to size 9.24683pt on input line 44.
  [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -346,11 +346,27 @@ LaTeX Warning: Citation `littman1995' on page 13 undefined on input line 174.
 
 ]
 第4章
-[15] [16]) [17] [18]
+[15] [16]
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 113.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 113.
+
+
+LaTeX Warning: Reference `equation:pfc' on page 17 undefined on input line 118.
+
+[17]
+
+LaTeX Warning: Reference `equation:reward' on page 18 undefined on input line 150.
+
+) [18]
 \openout2 = `./evaluate.aux'.
 
  (./evaluate.tex
 第5章
+
+LaTeX Warning: Reference `section:実験条件' on page 19 undefined on input line 4.
+
 ) [19
 
 
@@ -376,12 +392,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2316 strings out of 492749
- 26983 string characters out of 6140097
- 98804 words of memory out of 5000000
- 6707 multiletter control sequences out of 15000+600000
- 25567 words of font info for 116 fonts, out of 8000000 for 9000
+ 2328 strings out of 492749
+ 27236 string characters out of 6140097
+ 98896 words of memory out of 5000000
+ 6719 multiletter control sequences out of 15000+600000
+ 25785 words of font info for 118 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 31i,9n,31p,408b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,11n,31p,408b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (25 pages, 60496 bytes).
+Output written on main.dvi (25 pages, 64296 bytes).
