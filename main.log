@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  27 JAN 2020 05:14
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  27 JAN 2020 17:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -379,7 +379,17 @@ Writing index file main.idx
 
 LaTeX Warning: Label `particles' multiply defined.
 
-) (./evaluate.aux) (./conclusion.aux))
+) (./evaluate.aux
+
+LaTeX Warning: Label `robot initial pose' multiply defined.
+
+
+LaTeX Warning: Label `robot initial pose' multiply defined.
+
+
+LaTeX Warning: Label `robot initial pose' multiply defined.
+
+) (./conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -532,13 +542,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 33.
  (./main.toc
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 49.
+(Font)              scaled to size 9.24683pt on input line 50.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 49.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 49.
+(Font)              scaled to size 9.24683pt on input line 50.
  [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -661,7 +671,7 @@ LaTeX Warning: Reference `equation:pfc' on page 17 undefined on input line 118.
 
 [17]
 
-LaTeX Warning: Reference `equation:reward' on page 18 undefined on input line 150.
+LaTeX Warning: Reference `equation:reward' on page 18 undefined on input line 153.
 
 ) [18]
 \openout2 = `./evaluate.aux'.
@@ -685,16 +695,16 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 74.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 74.
- [20]) [21]
+ [20] [21]) [22] [23]
 \openout2 = `./conclusion.aux'.
 
- (./conclusion.tex [22
+ (./conclusion.tex [24
 
 
 
 ]
 第6章
-) [23]
+) [25]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
@@ -706,12 +716,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 14922 strings out of 492749
- 295602 string characters out of 6140097
- 324758 words of memory out of 5000000
- 19256 multiletter control sequences out of 15000+600000
+ 14923 strings out of 492749
+ 295622 string characters out of 6140097
+ 324769 words of memory out of 5000000
+ 19257 multiletter control sequences out of 15000+600000
  557278 words of font info for 141 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 37i,11n,40p,408b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,16n,40p,408b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (27 pages, 70380 bytes).
+Output written on main.dvi (29 pages, 74904 bytes).

@@ -125,9 +125,12 @@ PFC法において、行動を評価する式\ref{equation:pfc}は、離散の�
 本手法では、この式を
 \begin{equation}
 \label{equation:modified pfc}
+  % Q_{\rm PFC}(a, b) = \sum_{i=1}^{N} \frac{ w^{(i)} }{ V(s^{(i)})^{m} }
+  %                     \left[r^{a}_{s^{(i)} s^{\prime}}
+  %                           + V(s^{\prime})^{m^{(i)}_{\rm avoid}} \right]
   Q_{\rm PFC}(a, b) = \sum_{i=1}^{N} \frac{ w^{(i)} }{ V(s^{(i)})^{m} }
                       \left[r^{a}_{s^{(i)} s^{\prime}}
-                            + V(s^{\prime})^{m^{(i)}_{\rm avoid}} \right]
+                            + V(s^{\prime}) \right] ^{m^{(i)}_{\rm avoid}}
 \end{equation}
 のように変更することで、$m^{(i)_{\rm avoid}}$の値により、パーティクルが行動に与える影響の大きさが変わるようにする。
 

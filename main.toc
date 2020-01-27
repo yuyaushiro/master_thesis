@@ -42,8 +42,9 @@
 \contentsline {subsection}{\numberline {5.1.2}評価方法}{20}%
 \contentsline {section}{\numberline {5.2}シミュレーション実験の条件}{20}%
 \contentsline {subsection}{\numberline {5.2.1}環境}{20}%
-\contentsline {subsection}{\numberline {5.2.2}ロボットの初期姿勢}{21}%
-\contentsline {subsection}{\numberline {5.2.3}MCLの設定}{21}%
-\contentsline {section}{\numberline {5.3}結果}{21}%
-\contentsline {section}{\numberline {5.4}考察}{21}%
-\contentsline {chapter}{\numberline {第6章}結論}{23}%
+\contentsline {subsection}{\numberline {5.2.2}ロボットの行動と初期姿勢}{21}%
+\contentsline {subsection}{\numberline {5.2.3}価値関数の計算}{22}%
+\contentsline {subsection}{\numberline {5.2.4}MCLの設定}{22}%
+\contentsline {section}{\numberline {5.3}結果}{23}%
+\contentsline {section}{\numberline {5.4}考察}{23}%
+\contentsline {chapter}{\numberline {第6章}結論}{25}%
