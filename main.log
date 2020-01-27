@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  27 JAN 2020 23:46
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  28 JAN 2020 01:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,13 +575,13 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 23.0061pt on input line 36.
  (./main.toc
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 53.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 53.
+(Font)              scaled to size 9.24683pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 53.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 53.
+(Font)              scaled to size 9.24683pt on input line 52.
  [3])
 \tf@toc=\write4
 \openout4 = `main.toc'.
@@ -711,6 +711,9 @@ LaTeX Warning: Reference `equation:reward' on page 18 undefined on input line 15
 
  (./evaluate.tex
 第5章
+
+LaTeX Warning: Reference `section:考察' on page 19 undefined on input line 6.
+
 [19
 
 
@@ -737,21 +740,16 @@ Overfull \hbox (0.73007pt too wide) in paragraph at lines 135--139
 
 LaTeX Warning: Citation `ueda2018searching' on page 23 undefined on input line 161.
 
-
-Overfull \hbox (7.51653pt too wide) in paragraph at lines 194--206
-[][] 
- []
-
-) [23] [24]
+[23]) [24] [25]
 \openout2 = `./conclusion.aux'.
 
- (./conclusion.tex
-第6章
-) [25
+ (./conclusion.tex [26
 
 
 
 ]
+第6章
+) [27]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
@@ -765,10 +763,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  15140 strings out of 492749
  298159 string characters out of 6140097
- 328514 words of memory out of 5000000
+ 327503 words of memory out of 5000000
  19461 multiletter control sequences out of 15000+600000
  557384 words of font info for 142 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  37i,16n,40p,408b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (29 pages, 79360 bytes).
+Output written on main.dvi (31 pages, 82600 bytes).
