@@ -71,7 +71,7 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{environment.pdf}
-    \caption{Environment map with one obstacle}
+    \caption{Environment map with one obstacle.}
     \label{fig:environment}
   \end{center}
 \end{figure}
@@ -81,9 +81,9 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 ロボットの行動は、$\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする。
 行動はそれぞれ、
 \begin{itemize}
-  \item fw: $(0.2 + 0.01\sigma) \si{[m/s]}$ の前進
-  \item ccw: $(1 + 0.01\sigma) \si{[rad/s]}$ のその場旋回
-  \item cw: $(-1 + 0.01\sigma) \si{[rad/s]}$ のその場旋回
+  \item $fw$: $(0.2 + 0.01\sigma) \si{[m/s]}$ の前進
+  \item $ccw$: $(1 + 0.01\sigma) \si{[rad/s]}$ のその場旋回
+  \item $cw$: $(-1 + 0.01\sigma) \si{[rad/s]}$ のその場旋回
 \end{itemize}
 を意味する。
 ここで、$\sigma$は正規分布$\mathcal{N}(0, 1)$から生成されるノイズであり、$\sigma \sim \mathcal{{N}}(0, 1)$のように選択される。
@@ -125,11 +125,17 @@ MDPでは、報酬は一元化する必要があるため、この2つの報酬�
   r^{a}_{\bm{x}\bm{x}^{\prime}} &=
   {r_{\rm time}}^{a}_{\bm{x}\bm{x}^{\prime}} +
   {r_{\rm obstacle}}^{a}_{\bm{x}\bm{x}^{\prime}} \\
-  &= -\Delta  -c\Delta t
+  &= -\Delta t  -c\Delta t
 \end{split}
 \end{equation}
 と設定する。
-今回のタスクでは、障害物に入ることが許されないため、$c$の値を大きく$100$とする。
+$c$は定数であり、障害物へ入ることのペナルティー度合いを表す。
+今回のタスクでは、障害物に入ることが許されないため、$c$の値を大きく$100$と設定する。
+
+価値関数の計算は、
+\url{https://github.com/ryuichiueda/simple_value_iteration_ros.git}
+のコードを利用して行った。
+計算には、インテル Core i7 8550U/1.8GHz/4コアのCPUを搭載したコンピュータを用いて、32分58秒かかった。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MCLの設定}
@@ -149,8 +155,58 @@ MCLのパーティクル数$N$は、$500$で固定とする。
 \end{equation}
 とし、タスク実行中にゴール内へと侵入したパーティクルの重みを非常に小さくする。
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{PFC法の設定}
+本実験では、PFC法においてゴールに近いパーティクルが行動決定に与える影響度を表す$m$は、$2$とする。
+$m$の値を変えたときの、タスクの達成率と達成までの時間の関係は、\cite{ueda2018searching}において明らかにされている。
+この研究では、触覚センサのみを有する簡易マニピュレータによる、把持物体の探索動作において検証されている。
+移動ロボットのタスクにおける$m$とタスクの達成率、および達成までの時間については、まだ検証されていない。
+
+本論文において新たに導入した、障害物に侵入しそうなパーティクルが、行動決定与える影響を変更する変数$m^{(i)}_{\rm avoid}$を設定する。
+最大値と最小値については、それぞれ$m_{\rm avoid\_min} = 1$と$m_{\rm avoid\_max} = 3$とする。
+
+また、本評価では、ロボットがデッドロックすることを防ぐためにの処理を追加する。
+ロボットは、自身が左右の旋回行動を交互に行った場合、
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{結果} \label{section:結果}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{他手法との比較}
+まず、提案手法の効果を他手法と定量的に比較する。
+\ref{section:実験条件}節で述べた条件のもと、同タスクを4つの手法と比較した。
+まず、1つ目は本論文で提案した障害物回避行動を取り入れたPFC方でこのタスクを行う。
+この提案手法を、回避動作を入れていない通常のPFC法と、Q-MDP法($m=0$のPFC法)と比較する。
+さらに、参考として、
+\begin{itemize}
+  \item ロボットの真の姿勢$\V{x}^{*}$を使用した最適方策
+  \item パーティクルの平均姿勢$\bar{\V{x}}$を使用した最適方策
+\end{itemize}
+の2つを加えた、5つの手法で比較する。
+
+結果を表\ref{table:comparison}に示す。
+
+
+\begin{table}[tbp]
+\label{table:comparison}
+\caption{Comparison of PFC with avoidance, nomal PFC, Q-MDP, and some other simulations.}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Methods &
+  \begin{tabular}[c]{@{}c@{}}Successful\\ trials\end{tabular} &
+  \begin{tabular}[c]{@{}c@{}}Avg. of time\\ in successful trials\end{tabular} &
+  \begin{tabular}[c]{@{}c@{}}Avg. of the total time\\ of particles inside obstacle\\ in successful trials\end{tabular} \\ \midrule
+PFC with avoidance    & 100 $\%$ & 72.27 $[\si{s}]$ & 0.00    $[\si{s}]$ \\
+PFC without avoidance & 51  $\%$ & 62.98 $[\si{s}]$ & 2587.14 $[\si{s}]$ \\
+Q-MDP                 & 40  $\%$ & 65.03 $[\si{s}]$ & 22.57   $[\si{s}]$ \\
+Decision based on $\bar{\V{x}}$  & 20  $\%$ & 38.88 $[\si{s}]$ & 898.85  $[\si{s}]$ \\
+Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.61 $[\si{s}]$ & 994.48  $[\si{s}]$ \\ \bottomrule
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{動作の確認}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
