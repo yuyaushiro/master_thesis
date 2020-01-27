@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  28 JAN 2020 01:33
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  28 JAN 2020 05:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,24 +732,37 @@ LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 74.
  [20] [21]
-Overfull \hbox (0.73007pt too wide) in paragraph at lines 135--139
+Overfull \hbox (0.73007pt too wide) in paragraph at lines 137--141
 []\JY2/mc/m/n/10 価値関数の計算は 、 $\OT1/cmtt/m/n/10 https : / / github . com / ryuichiueda / simple _ value _ iteration _
  []
 
 [22]
 
-LaTeX Warning: Citation `ueda2018searching' on page 23 undefined on input line 161.
+LaTeX Warning: Citation `ueda2018searching' on page 23 undefined on input line 163.
 
-[23]) [24] [25]
+[23] [24]
+File: ./figs/true_pose.pdf Graphic file (type pdf)
+<./figs/true_pose.pdf>
+File: ./figs/average_pose.pdf Graphic file (type pdf)
+<./figs/average_pose.pdf>
+File: ./figs/avoid_pfc_good.pdf Graphic file (type pdf)
+<./figs/avoid_pfc_good.pdf>
+File: ./figs/avoid_pfc_kakukaku.pdf Graphic file (type pdf)
+<./figs/avoid_pfc_kakukaku.pdf>
+File: ./figs/pfc.pdf Graphic file (type pdf)
+<./figs/pfc.pdf>
+File: ./figs/q-mdp.pdf Graphic file (type pdf)
+<./figs/q-mdp.pdf>
+) [25] [26] [27] [28] [29] [30] [31]
 \openout2 = `./conclusion.aux'.
 
- (./conclusion.tex [26
+ (./conclusion.tex [32
 
 
 
 ]
 第6章
-) [27]
+) [33]
 No file main.bbl.
 No file main.ind.
 (./main.aux (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
@@ -761,12 +774,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15140 strings out of 492749
- 298159 string characters out of 6140097
- 327503 words of memory out of 5000000
- 19461 multiletter control sequences out of 15000+600000
+ 15170 strings out of 492749
+ 298758 string characters out of 6140097
+ 327569 words of memory out of 5000000
+ 19485 multiletter control sequences out of 15000+600000
  557384 words of font info for 142 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  37i,16n,40p,408b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (31 pages, 82600 bytes).
+Output written on main.dvi (37 pages, 86760 bytes).
