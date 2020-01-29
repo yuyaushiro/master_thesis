@@ -1,0 +1,58 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: tmp.aux
+A level-1 auxiliary file: inc/preface.aux
+A level-1 auxiliary file: inc/introduction.aux
+A level-1 auxiliary file: inc/mcl.aux
+A level-1 auxiliary file: inc/pomdp.aux
+A level-1 auxiliary file: inc/method.aux
+A level-1 auxiliary file: inc/evaluate.aux
+A level-1 auxiliary file: inc/conclusion.aux
+The style file: jualpha.bst
+Database file #1: ./references.bib
+Warning--I didn't find a database entry for "aa"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both volume and number fields in quigley2009ros
+You've used 15 entries,
+            3101 wiz_defined-function locations,
+            756 strings with 7771 characters,
+and the built_in function-call counts, 8352 in all, are:
+= -- 708
+> -- 318
+< -- 30
++ -- 110
+- -- 110
+* -- 502
+:= -- 1118
+add.period$ -- 62
+call.type$ -- 15
+change.case$ -- 111
+chr.to.int$ -- 15
+cite$ -- 16
+duplicate$ -- 442
+empty$ -- 667
+format.name$ -- 194
+if$ -- 1908
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 16
+newline$ -- 79
+num.names$ -- 43
+pop$ -- 195
+preamble$ -- 1
+purify$ -- 128
+quote$ -- 0
+skip$ -- 429
+stack$ -- 0
+substring$ -- 386
+swap$ -- 119
+text.length$ -- 30
+text.prefix$ -- 16
+top$ -- 0
+type$ -- 112
+warning$ -- 1
+while$ -- 52
+width$ -- 20
+write$ -- 197
+is.kanji.str$ -- 201
+(There were 2 warnings)

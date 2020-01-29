@@ -170,11 +170,42 @@ POMDPがMDPと異なる点は、ロボットが真の状態が分かっていな
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Q-MDP} \label{section:q-mdp}
-本節では、$Q_{\rm MDP}$ value methodについて述べる。
+本節では、Q-MDPについて述べる。
 この手法は、Littmanらにより\cite{littman1995}で提案され、Uedaらによって\cite{}でロボットに適用された。
 
-Q-MDP法は、ロボットの行動を
+Q-MDP法は、観測の不確かさを考慮せずに、MDP問題として解かれた最適価値関数と、信念分布から行動を決定する。
+各行動に対する期待値計算を行い、最も期待値が高くなるような行動を選択する。
+信念分布がパーティクルにより近似されているとき、期待値は、
+\begin{equation}
+\label{equation:q-mdp}
+  Q_{\rm PFC}(a, b) = \sum_{i=1}^{N} w^{(i)}
+                      \left[r^{a}_{s^{(i)} s^{\prime}} + V(s^{\prime}) \right]
+\end{equation}
+のように計算される。
+この期待値を全行動$a \in \mathcal{A}$に対して計算し、最大となる行動を
+\begin{equation}
+\label{equation:pi q-mdp}
+  \Pi_{Q_{\rm MDP}}(b) = \argmax_{a \in \mathcal{A}} Q_{\rm MDP}(a, b)
+\end{equation}
+のように決定する。
 
+Q-MDP法は、UedaらによってRoboCupの四足歩行リーグのゴールキーパーのロボットへと適用され、有効性が示されている\cite{ueda2003iros}。
+しかし、本論文で扱うような移動ロボットでは、ローカルミニマムによる行動の停滞が頻繁に起こるQ-MDP法は、あまり有効な方法とは言えない。
+また、\ref{section:related works}節で述べた沿岸航法の探索動作のような、
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Probabilistic Flow Control} \label{section:PFC法}
+本節では、PFC(Probabilistic Flow Control)法について述べる。
+この手法は、Uedaにより\cite{ueda2015}で提案されている。
+
+PFC法では、行動評価の式を
+\begin{equation}
+\label{equation:pfc}
+  Q_{\rm PFC}(a, b) = \sum_{i=1}^{N} \frac{ w^{(i)} }{ V(\V{x}^{(i)})^{m} }
+                      \left[r^{a}_{\V{x}^{(i)} \V{x}^{\prime}} + V(\V{x}^{\prime}) \right]
+\end{equation}
+のように変更することで、ゴールに近いパーティクルが行動決定に与える影響を大きくし、ロボットのゴール探索動作を生成した。
+ここで、$m$は\cite{ueda2018searching}で導入されたパラメータで、ゴールに近いパーティクルの行動決定への影響度を決定する。
+ロボットはパーティクル分布を徐々にゴールへと流し込むように動作し、分布の中にロボットが存在する場合、ロボットの流れに従いゴールへと到達する。
+この手法は、知的な探索動作を生成し、かつQ-MDP法で問題となっていたローカルミニマムによる行動停滞の頻度の低下も確認されており、
+移動ロボットのナビゲーションタスクに対し有効である。

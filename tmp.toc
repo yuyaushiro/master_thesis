@@ -1,3 +1,4 @@
+\contentsline {chapter}{謝辞}{iii}%
 \contentsline {chapter}{\numberline {第1章}序論}{1}%
 \contentsline {section}{\numberline {1.1}背景}{1}%
 \contentsline {section}{\numberline {1.2}先行研究}{3}%
@@ -28,8 +29,7 @@
 \contentsline {subsection}{\numberline {4.2.2}本論文において回避対象とする障害物}{16}%
 \contentsline {section}{\numberline {4.3}価値反復による価値関数の計算}{16}%
 \contentsline {subsection}{\numberline {4.3.1}状態空間の離散化}{17}%
-\contentsline {subsection}{\numberline {4.3.2}報酬}{17}%
-\contentsline {subsection}{\numberline {4.3.3}価値反復}{17}%
+\contentsline {subsection}{\numberline {4.3.2}価値反復}{17}%
 \contentsline {section}{\numberline {4.4}提案する手法}{17}%
 \contentsline {subsection}{\numberline {4.4.1}回避用変数の導入}{17}%
 \contentsline {subsection}{\numberline {4.4.2}行動評価式の変更}{18}%
@@ -52,3 +52,4 @@
 \contentsline {chapter}{\numberline {第6章}結論}{33}%
 \contentsline {section}{\numberline {6.1}本論文のまとめ}{33}%
 \contentsline {section}{\numberline {6.2}今後の展望}{33}%
+\contentsline {chapter}{参考文献}{35}%

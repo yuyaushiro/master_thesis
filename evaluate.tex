@@ -236,7 +236,7 @@ $\V{x}^{*}$が分布から外れてしまった場合である。
 今回の実験条件では、ロボットの観測が制限されていたため、このような自体も起こり得る。
 また、ロボットに搭載したセンサにより、自己位置推定に役立つ観測を行える場合であっても、分布が$\V{x}^{*}$と乖離する場合がある。
 このような状態を「誘拐状態」と言い、再度パーティクルを$\V{x}^{*}$の周辺に分布させることは困難とされている。
-これは、「ロボット誘拐問題」と呼ばれ、復帰方法についてもいくつか研究が行われている\cite{lenser2000etal, 上田etal2005b}。
+これは、「ロボット誘拐問題」と呼ばれ、復帰方法についてもいくつか研究が行われている\cite{lenser2000etal, aa}。
 本評価においては、$\V{x}^{*}$が分布ないに存在していることを前提とし、誘拐状態からの回復アルゴリズムを実装していないため、
 タスクの失敗へとつながった。
 
@@ -284,7 +284,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.61 $[\si{s}]$ & 994.48  $[\si{s}
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{true_pose.pdf}
-    \caption{True pose.}
+    \caption{Robot behavior by true pose.}
     \label{fig:true pose}
   \end{center}
 \end{figure}
@@ -298,7 +298,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.61 $[\si{s}]$ & 994.48  $[\si{s}
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{average_pose.pdf}
-    \caption{Average pose of particles.}
+    \caption{Robot behavior by particles average pose.}
     \label{fig:average pose}
   \end{center}
 \end{figure}
@@ -313,7 +313,7 @@ $t=12.7[\si{s}]$でひとつのパーティクルが障害物に入りそうに�
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_good.pdf}
-    \caption{PFC with avoidance good.}
+    \caption{Robot behavior by PFC method with avoidance.}
     \label{fig:avoid pfc good}
   \end{center}
 \end{figure}
@@ -332,7 +332,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_kakukaku.pdf}
-    \caption{PFC with avoidance kakukaku.}
+    \caption{Robot behavior by PFC method with avoidance.}
     \label{fig:avoid pfc kakukaku}
   \end{center}
 \end{figure}
@@ -347,7 +347,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{pfc.pdf}
-    \caption{PFC}
+    \caption{Robot behavior by normal PFC method.}
     \label{fig:pfc}
   \end{center}
 \end{figure}
@@ -362,7 +362,7 @@ Q-MDP法の動作については、図\ref{fig:q-mdp}に示す。
 \begin{figure}[tbp]
   \begin{center}
     \includegraphics[width=12cm, ]{q-mdp.pdf}
-    \caption{Q-MDP}
+    \caption{Robot behavior by Q-MDP method.}
     \label{fig:q-mdp}
   \end{center}
 \end{figure}

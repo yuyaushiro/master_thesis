@@ -1,6 +1,7 @@
 \documentclass[a4paper,12pt,uplatex]{jsbook}
 
 \newcommand{\V}[1]{\boldsymbol{#1}}
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}
 \def\thline{\noalign{\hrule height 1pt}}
 \def\tvline{\vrule width 1pt}
 
@@ -22,16 +23,17 @@
 \pagenumbering{roman}
 
 \begin{document}
-\title{令和元年度 修士論文\\
+\title{2019年度 修士論文\\
 　\\
 移動ロボットのための\\
-不確かさを考慮した障害物回避行動の生成}
+状態推定の不確かさを考慮した\\
+障害物回避行動の生成}
 \author{鈴木勇矢\\
 Chiba Institute of Technology}
-\date{2020年2月x日}
+\date{2020年1月28日}
 
 \maketitle
-% \include{include/preface}
+\include{inc/preface}
 
 \tableofcontents
 
@@ -40,19 +42,19 @@ Chiba Institute of Technology}
 \cleardoublepage
 \pagenumbering{arabic}
 
-% \include{inc/introduction}
-% \include{inc/mcl}
-% \include{inc/pomdp}
-% \include{inc/method}
-% \include{inc/evaluate}
-% \include{inc/conclusion}
+\include{inc/introduction}
+\include{inc/mcl}
+\include{inc/pomdp}
+\include{inc/method}
+\include{inc/evaluate}
+\include{inc/conclusion}
 
-\include{./introduction}
-\include{./mcl}
-\include{./pomdp}
-\include{./method}
-\include{./evaluate}
-\include{./conclusion}
+% \include{./introduction}
+% \include{./mcl}
+% \include{./pomdp}
+% \include{./method}
+% \include{./evaluate}
+% \include{./conclusion}
 
 %%% 参考文献 %%%
 % よほどのことが無い限りet al.は使わないことにしましょう
@@ -60,6 +62,6 @@ Chiba Institute of Technology}
 \bibliography{./references}
 
 \newpage
-\printindex
+% \printindex
 
 \end{document}
