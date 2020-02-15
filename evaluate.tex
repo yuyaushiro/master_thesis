@@ -94,7 +94,17 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{ロボットの行動と初期姿勢}
-ロボットの行動は、$\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする。
+ロボットの行動は、図\ref{fig:ロボットの行動の種類}に示すような、
+$\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする。
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=8cm, ]{ロボットの行動の種類.pdf}
+    \caption{Types of robot action.}
+    \label{fig:ロボットの行動の種類}
+  \end{center}
+\end{figure}
+
 行動はそれぞれ、
 \begin{itemize}
   \item $fw$: $(0.2 + 0.01\sigma) \si{[m/s]}$ の前進
@@ -155,10 +165,34 @@ $c$は定数であり、障害物へ入ることのペナルティー度合い�
 \url{https://github.com/ryuichiueda/simple_value_iteration_ros.git}
 のコードを利用して行った。
 計算には、インテル Core i7 8550U/1.8GHz/4コアのCPUを搭載したコンピュータを用いて、32分58秒かかった。
+計算結果の一部を示している図\ref{fig:価値関数計算結果}は、
+方向を$0 \leq \theta < 10 \si{[deg]}$で固定したときの、各位置での価値を表している。
+白が最も価値が高く、色が濃くなるほど価値が低いことを意味する。
+ゴールは価値が$0$であり、ゴール遠方や障害物内は低い価値となっていることが分かる。
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=12cm, ]{価値関数計算結果.pdf}
+    \caption{Calculation result of state value function. $(0 \leq \theta < 10 \si{[deg]})$}
+    \label{fig:価値関数計算結果}
+  \end{center}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MCLの設定}
 MCLのパーティクル数$N$は、$500$で固定とする。
+パーティクルの初期姿勢は、ロボットの初期配置のばらつきと同様に分布させる。
+図\ref{fig:パーティクルの初期分布}に、タスク開始時のロボットの姿勢とパーティクルの分布の一例を示す。
+パーティクルは正規分布に従いばらまかれ、ロボットも同様の正規分布に従い初期配置が行われる。
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=12cm, ]{パーティクルの初期分布.pdf}
+    \caption{Example of initial distribution of particles and initial pose of robot.}
+    \label{fig:パーティクルの初期分布}
+  \end{center}
+\end{figure}
+
 予測ステップにおけるパーティクルの状態遷移は、ロボットの運動モデルと同様とする。
 ロボットは、タスクが終了したかどうかの情報を得ることができる。
 この情報を計測による更新ステップで、パーティクルの重み$w^{(i)}$に反映する。
