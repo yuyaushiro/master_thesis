@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  15 FEB 2020 20:36
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  18 FEB 2020 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,52 +702,88 @@ LaTeX Warning: Citation `ueda2018searching' on page 13 undefined on input line 2
 
  (./method.tex
 第4章
+
+LaTeX Warning: Reference `一般的な行動決定' on page 15 undefined on input line 12.
+
+File: ./figs/一般的な行動決定.pdf Graphic file (type pdf)
+<./figs/一般的な行動決定.pdf>
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 22.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 22.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./figs/一般的な行動決定(MCL).pdf Graphic file (type pdf)
+<./figs/一般的な行動決定(MCL).pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ./figs/障害物回避タスクの例.pdf Graphic file (type pdf)
 <./figs/障害物回避タスクの例.pdf>
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 43.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 43.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ./figs/一般的な障害物回避.pdf Graphic file (type pdf)
 <./figs/一般的な障害物回避.pdf>
-File: ./figs/不確かさを考慮した障害物回避.pdf Graphic file (type pdf)
-<./figs/不確かさを考慮した障害物回避.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [15
 
 
 
-] [16] [17]
+] [16]
+File: ./figs/不確かさを考慮した障害物回避.pdf Graphic file (type pdf)
+<./figs/不確かさを考慮した障害物回避.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17]
+File: ./figs/手法概要.pdf Graphic file (type pdf)
+<./figs/手法概要.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18]
 File: ./figs/地図の障害物.png Graphic file (type bmp)
 <./figs/地図の障害物.png>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19]
+[19] [20] [21]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 186.
+(Font)              scaled to size 6.47278pt on input line 195.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 186.
- [20]
+(Font)              scaled to size 4.62341pt on input line 195.
+ [22]
 
-LaTeX Warning: Reference `subsection:報酬' on page 21 undefined on input line 226.
+LaTeX Warning: Reference `subsection:報酬' on page 23 undefined on input line 235.
 
 
-LaTeX Warning: Reference `equation:reward' on page 21 undefined on input line 226.
+LaTeX Warning: Reference `equation:reward' on page 23 undefined on input line 235.
 
-) [21]
+File: ./figs/回避のループ.pdf Graphic file (type pdf)
+<./figs/回避のループ.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [23] [24]
 \openout2 = `./evaluate.aux'.
 
- (./evaluate.tex [22
+ (./evaluate.tex
+第5章
+
+LaTeX Warning: Reference `section:考察' on page 25 undefined on input line 6.
+
+[25
 
 
 
 ]
-第5章
-
-LaTeX Warning: Reference `section:考察' on page 23 undefined on input line 6.
-
-[23]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 48.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -756,16 +792,20 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
 File: ./figs/environment.pdf Graphic file (type pdf)
 <./figs/environment.pdf>
- [24]
+ [26]
 File: ./figs/task.pdf Graphic file (type pdf)
 <./figs/task.pdf>
-File: ./figs/ロボットの行動の種類.pdf Graphic file (type pdf)
-<./figs/ロボットの行動の種類.pdf>
- [25]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27]
+File: ./figs/ロボットの行動の種類.pdf Graphic file (type pdf)
+<./figs/ロボットの行動の種類.pdf>
+[27]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] [29]
 Overfull \hbox (0.73007pt too wide) in paragraph at lines 164--172
 []\JY2/mc/m/n/10 価値関数の計算は 、 $\OT1/cmtt/m/n/10 https : / / github . com / ryuichiueda / simple _ value _ iteration _
  []
@@ -776,46 +816,68 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 8.32214pt on input line 176.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 5.5481pt on input line 176.
-[28]
+[30]
 File: ./figs/パーティクルの初期分布.pdf Graphic file (type pdf)
 <./figs/パーティクルの初期分布.pdf>
- [29]
+ [31]
 
-LaTeX Warning: Citation `ueda2018searching' on page 30 undefined on input line 214.
+LaTeX Warning: Citation `ueda2018searching' on page 32 undefined on input line 214.
 
-[30]
+[32]
 
-LaTeX Warning: Citation `lenser2000etal' on page 31 undefined on input line 273.
+LaTeX Warning: Citation `lenser2000etal' on page 33 undefined on input line 273.
 
 
-LaTeX Warning: Citation `aa' on page 31 undefined on input line 273.
+LaTeX Warning: Citation `aa' on page 33 undefined on input line 273.
 
-[31]
+[33]
 File: ./figs/true_pose.pdf Graphic file (type pdf)
 <./figs/true_pose.pdf>
- [32]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34]
 File: ./figs/average_pose.pdf Graphic file (type pdf)
 <./figs/average_pose.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ./figs/avoid_pfc_good.pdf Graphic file (type pdf)
 <./figs/avoid_pfc_good.pdf>
- [33]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35]
 File: ./figs/avoid_pfc_kakukaku.pdf Graphic file (type pdf)
 <./figs/avoid_pfc_kakukaku.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: ./figs/pfc.pdf Graphic file (type pdf)
 <./figs/pfc.pdf>
- [34]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36]
 File: ./figs/q-mdp.pdf Graphic file (type pdf)
 <./figs/q-mdp.pdf>
-) [35] [36] [37] [38]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [37] [38] [39] [40]
 \openout2 = `./conclusion.aux'.
 
  (./conclusion.tex
 第6章
-[39
+[41
 
 
 
-]) [40]
+]) [42]
 No file main.bbl.
 (./main.aux (./inc/preface.aux) (./introduction.aux) (./mcl.aux) (./pomdp.aux) (./method.aux) (./evaluate.aux) (./conclusion.aux))
 
@@ -826,12 +888,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15245 strings out of 492749
- 300632 string characters out of 6140097
- 328005 words of memory out of 5000000
- 19537 multiletter control sequences out of 15000+600000
+ 15266 strings out of 492749
+ 301269 string characters out of 6140097
+ 328049 words of memory out of 5000000
+ 19554 multiletter control sequences out of 15000+600000
  560144 words of font info for 153 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  37i,16n,40p,408b,844s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (46 pages, 112784 bytes).
+Output written on main.dvi (48 pages, 115820 bytes).

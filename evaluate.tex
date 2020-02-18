@@ -69,7 +69,7 @@
 また、環境の中央を原点とする$X-Y$座標系$\Sigma$を定義する。
 $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 ゴールは$(0, 1)$の位置を中心とした、半径$0.15[\si{m}]$の範囲内とする。
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{environment.pdf}
     \caption{Environment map with one obstacle.}
@@ -84,7 +84,7 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 逆に、破線矢印のようにロボットが障害物に衝突した場合、タスク失敗とする。
 また、$300[\si{s}]$の間ゴールへ入ることができなかった場合も、同様にタスク失敗とする。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{task.pdf}
     \caption{Task success and failure examples.}
@@ -315,7 +315,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 軌跡が角張っているのは、状態空間を離散化したときの粗さが影響していると考えられる。
 今回は$\theta$を$10[\si{deg}]$ごとに離散化したが、もっと細かく離散化することで、軌跡はなめらかなものになると予想される。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{true_pose.pdf}
     \caption{Robot behavior by true pose.}
@@ -329,7 +329,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 したがって、障害物に突入することなくゴールへと向かっている。
 一方で、図の下部の試行では、$\V{x}^{*}$がインコース側を移動しているため、障害物に衝突してしまっているのが分かる。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{average_pose.pdf}
     \caption{Robot behavior by particles average pose.}
@@ -344,7 +344,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 $t=12.7[\si{s}]$でひとつのパーティクルが障害物に入りそうになった際、$m^{(i)}_{\rm avoid}$の値が最大値となる。
 ロボットはそのパーティクルの行動を最優先するように右旋回ののち前進し、パーティクルが障害物に侵入するのを防ぐ動作を行った。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_good.pdf}
     \caption{Robot behavior by PFC method with avoidance.}
@@ -363,7 +363,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 これを防ぐためには、数ステップ先の動作までを含んで回避動作を考えるという方法が、有効ではないかと予想される。
 しかし、この計算はロボットが動作するリアルタイムで行える必要があるため、計算量と時間の問題が発生すると考えられる。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_kakukaku.pdf}
     \caption{Robot behavior by PFC method with avoidance.}
@@ -378,7 +378,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 成功時と失敗時の違いは、パーティクルの平均姿勢$\bar{\V{x}}$を利用した行動と同様に、真の姿勢$\V{x}^{*}$がアウトコース側に存在しているか否かである。
 成功時の右のコマでは、障害物を回避することに成功したのち、ゴールを探索する動作を行いタスク成功したことが分かる。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{pfc.pdf}
     \caption{Robot behavior by normal PFC method.}
@@ -393,7 +393,7 @@ Q-MDP法の動作については、図\ref{fig:q-mdp}に示す。
 成功時の動作では、分布の中央付近に$\V{x}^{*}$が存在しているため、ゴールへ入ることができている。
 しかし、Q-MDP法はゴールの探索動作を行わないため、失敗時の動作ではゴール付近で行動が長時間停滞し失敗となる。
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{q-mdp.pdf}
     \caption{Robot behavior by Q-MDP method.}
