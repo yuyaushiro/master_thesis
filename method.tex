@@ -1,4 +1,4 @@
-\chapter{状態推定の不確かさを考慮した\\障害物の回避動作} \label{chapter:method}
+\chapter{状態推定の不確かさを考慮した障害物の回避動作} \label{chapter:method}
 本章では、状態推定の不確かさを考慮した障害物の回避動作を生成する手法について述べる。
 \ref{section:一般的な回避}節では、現在一般的行われているような移動ロボットの回避行動について述べる。
 \ref{section:method overview}節では、提案手法の概要について簡単に述べる。
@@ -16,17 +16,17 @@ MCLで姿勢推定を行うロボットであれば、信念分布を近似す�
 ロボットは推定した姿勢の移動距離が最短となるように障害物を回避する経路を辿りゴールへと向かう。
 つまり、行動決定は分布の大きさや形が考慮されずに行われるということになる。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm, ]{一般的な行動決定.pdf}
+    \includegraphics[width=14cm]{一般的な行動決定.pdf}
     \caption{Path planning for general mobile robot}
     \label{fig:一般的な行動決定}
   \end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm, ]{一般的な行動決定MCL.pdf}
+    \includegraphics[width=14cm, ]{一般的な行動決定MCL.pdf}
     \caption{Path planning for a robot that localization using MCL}
     \label{fig:一般的な行動決定MCL}
   \end{center}
@@ -40,17 +40,17 @@ MCLで姿勢推定を行うロボットであれば、信念分布を近似す�
 ロボットの障害物衝突が考えられる。
 これを防ぐためには、最高確率の推定値のみではなく、信念分布全体を使用して行動決定を行うことが有効となる。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=10cm, ]{障害物回避タスクの例.pdf}
+    \includegraphics[width=12cm, ]{障害物回避タスクの例.pdf}
     \caption{Example of a task to avoid obstacle}
     \label{fig:障害物回避タスクの例}
   \end{center}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=12cm, ]{一般的な障害物回避.pdf}
+    \includegraphics[width=15cm, ]{一般的な障害物回避.pdf}
     \caption{Collision risk due to general obstacle avoidance behavior}
     \label{fig:一般的な障害物回避}
   \end{center}
@@ -69,9 +69,9 @@ MCLで姿勢推定を行うロボットであれば、信念分布を近似す�
 本手法では、MCLで姿勢推定をする移動ロボットを想定し、
 ロボットの信念分布を近似するパーティクルの分布全体が、障害物外を移動するようにロボットを動作させる。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=12cm, ]{不確かさを考慮した障害物回避.pdf}
+    \includegraphics[width=15cm, ]{不確かさを考慮した障害物回避.pdf}
     \caption{Obstacle avoidance considering uncertainty.}
     \label{fig:不確かさを考慮した障害物回避}
   \end{center}
@@ -90,9 +90,9 @@ PFC法では、パーティクル全体の状態価値の合計の期待値が�
 これにより、パーティクルの分布全体が障害物を避けるような動作を行わせるとともに、
 PFC法の利点である、ゴール付近で分布をゴールに流し込むような探索動作を行うことが可能となる。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=12cm, ]{手法概要.pdf}
+    \includegraphics[width=15cm, ]{手法概要.pdf}
     \caption{Overview of the method}
     \label{fig:手法概要}
   \end{center}
@@ -129,9 +129,9 @@ PFC法の利点である、ゴール付近で分布をゴールに流し込む�
 位置や形状については、タスク実行中に変化しない障害物に限るものとし、
 人や他のロボットなどの動的な障害物については、回避の対象外とする。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=12cm, ]{地図の障害物.png}
+    \includegraphics[width=14cm, ]{地図の障害物.png}
     \caption{Obstacles on the map}
     \label{fig:地図の障害物}
   \end{center}
@@ -252,9 +252,9 @@ $m^{(i)}_{\rm avoid}$は、タスクの実行中、状況に応じて
 本論文では、時間とともに線形に減少していく方法をとることとする。
 一度$m_{\rm avoid\_max}$まで増加した$m^{(i)}_{\rm avoid}$は、10秒後に$m_{\rm avoid\_min}$になるように減衰させていく。
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
-    \includegraphics[width=12cm, ]{回避のループ.pdf}
+    \includegraphics[width=15cm, ]{回避のループ.pdf}
     \caption{Action stagnation due to repeated avoidance behavior}
     \label{fig:回避のループ}
   \end{center}

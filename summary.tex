@@ -1,6 +1,17 @@
-\chapter*{}\addcontentsline{toc}{chapter}{Summary}
+\begin{jabstract}
+本論文では、状態推定の不確かさを考慮した障害物回避行動をロボットに行わせるための手法を提案する。
+実世界において、認識の不確かさは不可避の問題だが、人間や一部の生物は不確かさに応じて適切に行動する。
+ロボットにこのような知的な行動をさせるためには、行動決定アルゴリズムで情報の不確かさを考慮することが必要である。
+現在多くの移動ロボットにおいて、姿勢推定には確率論に基づく不確かさが考慮された推定が取り入れられている一方で、行動決定には不確かさが考慮されていない。
+姿勢推定では信念分布と呼ばれる確率分布で姿勢を表現するが、行動決定には最も確率の高い姿勢のみを利用するため、分布の大きさや形は動作に反映されない。
+この問題に対し、信念分布自体を行動決定に用いることで、不確かさを考慮した行動をロボットに行わせる研究が複数存在する。
+しかし、移動ロボットにおいて重要な、障害物回避行動に対し不確かさを考慮させる研究は見られない。
+提案手法は、MCLで自己位置推定を行う移動ロボットに対し、パーティクル全体が障害物を回避するような動作を行わせることで、信念分布内のロボットが障害物に衝突するのを防ぐ。
+障害物付近のパーティクルが行動決定に与える影響を一時的に大きくすることで、この動作を実現する。
+障害物を回避しゴールへと向かうナビゲーションタスクにおける動作を、従来手法と比較することで、提案手法の有効性が確認された。
+\end{jabstract}
 
-\section*{Summary}
+\begin{eabstract}
 In this paper, we propose a method to make a robot perform an obstacle avoidance behavior considering the uncertainty of state estimation.
 Cognitive uncertainty is an inevitable problem in the real world, but humans and some living things can choose appropriate actions on uncertainty.
 In order for the robot to perform such intelligent actions, it is necessary to consider the uncertainty of information in the decision making algorithm.
@@ -17,6 +28,7 @@ The proposed method assumes a mobile robot that estimates its pose using MCL.
 All particles avoid obstacles, preventing the robot from colliding with obstacles.
 This operation is realized by temporarily increasing the influence of particles near an obstacle on the decision making.
 The effectiveness of the proposed method was confirmed by comparing with the conventional method the operation of the navigation task toward the goal while avoiding obstacles.
+\end{eabstract}
 
-\section*{Keywords}
-Autonomous mobile robot、POMDPs、probabilistic flow control method
+% \section*{Keywords}
+% Autonomous mobile robot、POMDPs、probabilistic flow control method
