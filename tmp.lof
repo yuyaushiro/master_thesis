@@ -2,24 +2,24 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Path planning for general mobile robot}}{15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Path planning for a robot that localization using MCL}}{15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of a task to avoid obstacle}}{16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Collision risk due to general obstacle avoidance behavior}}{17}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Obstacle avoidance considering uncertainty.}}{18}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Overview of the method}}{19}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Obstacles on the map}}{21}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Action stagnation due to repeated avoidance behavior}}{24}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Path planning for general mobile robot}}{13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Path planning for a robot that localization using MCL}}{13}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of a task to avoid obstacle}}{14}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Collision risk due to general obstacle avoidance behavior}}{15}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Obstacle avoidance considering uncertainty.}}{16}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Overview of the method}}{17}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Obstacles on the map}}{18}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Action stagnation due to repeated avoidance behavior}}{21}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Environment map with one obstacle}}{27}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Task success and failure examples}}{28}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Types of robot action}}{29}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Calculation result of state value function $(0 \leq \theta < 10 \si {[deg]})$}}{31}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of initial distribution of particles and initial pose of robot}}{32}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Robot behavior by true pose}}{36}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Robot behavior by particles average pose}}{37}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Robot behavior by PFC method with avoidance}}{38}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Robot behavior by PFC method with avoidance}}{39}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Robot behavior by normal PFC method}}{40}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Robot behavior by Q-MDP method}}{41}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Environment map with one obstacle}}{24}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Task success and failure examples}}{25}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Types of robot action}}{26}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Calculation result of state value function $(0 \leq \theta < 10 \si {[deg]})$}}{28}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of initial distribution of particles and initial pose of robot}}{29}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Robot behavior by true pose}}{33}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Robot behavior by particles average pose}}{34}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Robot behavior by PFC method with avoidance}}{35}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Robot behavior by PFC method with avoidance}}{36}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Robot behavior by normal PFC method}}{37}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Robot behavior by Q-MDP method}}{38}%
 \addvspace {10\p@ }
