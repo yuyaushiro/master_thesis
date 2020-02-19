@@ -2,8 +2,7 @@
 本章では、提案した手法の評価を行う。
 \ref{section:評価方法}節では、評価方法について述べる。
 \ref{section:実験条件}節では、シミュレーション実験の条件について述べる。
-\ref{section:結果}節では、シミュレーション実験の結果を述べる。
-\ref{section:考察}節では、考察について述べる。
+\ref{section:結果}節では、シミュレーション実験の結果と考察を述べる。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{評価方法} \label{section:評価方法}
@@ -72,7 +71,7 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{environment.pdf}
-    \caption{Environment map with one obstacle.}
+    \caption{Environment map with one obstacle}
     \label{fig:environment}
   \end{center}
 \end{figure}
@@ -87,7 +86,7 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている。
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{task.pdf}
-    \caption{Task success and failure examples.}
+    \caption{Task success and failure examples}
     \label{fig:task}
   \end{center}
 \end{figure}
@@ -100,7 +99,7 @@ $\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする。
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=8cm, ]{ロボットの行動の種類.pdf}
-    \caption{Types of robot action.}
+    \caption{Types of robot action}
     \label{fig:ロボットの行動の種類}
   \end{center}
 \end{figure}
@@ -140,13 +139,13 @@ $\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする。
   {r_{\rm time}}^{a}_{\bm{x}\bm{x}^{\prime}} = -\Delta t
 \end{equation}
 と設定する。ここで、$\Delta t$は、$1$ステップの離散時間を意味し、ロボットが一回の行動で移動する時間とする。
-今回は、この$\Delta T$は$0.1[s]$とする。
+今回は、この$\Delta t$は$0.1[s]$とする。
 次に、障害物内での移動に関する報酬を
 \begin{equation}
 \label{robot initial pose}
   {r_{\rm obstacle}}^{a}_{\bm{x}\bm{x}^{\prime}} = -c\Delta t
 \end{equation}
-と設定する。状態遷移先が障t物だった場合、負の報酬として移動時間$\Delta T$の$c$倍を与える。
+と設定する。状態遷移先が障害物だった場合、負の報酬として移動時間$\Delta t$の$c$倍を与える。
 MDPでは、報酬は一元化する必要があるため、この2つの報酬を合わせて、
 \begin{equation}
 \label{robot initial pose}
@@ -173,7 +172,7 @@ $c$は定数であり、障害物へ入ることのペナルティー度合い�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{価値関数計算結果.pdf}
-    \caption{Calculation result of state value function. $(0 \leq \theta < 10 \si{[deg]})$}
+    \caption{Calculation result of state value function $(0 \leq \theta < 10 \si{[deg]})$}
     \label{fig:価値関数計算結果}
   \end{center}
 \end{figure}
@@ -188,7 +187,7 @@ MCLのパーティクル数$N$は、$500$で固定とする。
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{パーティクルの初期分布.pdf}
-    \caption{Example of initial distribution of particles and initial pose of robot.}
+    \caption{Example of initial distribution of particles and initial pose of robot}
     \label{fig:パーティクルの初期分布}
   \end{center}
 \end{figure}
@@ -243,11 +242,11 @@ $m$の値を変えたときの、タスクの達成率と達成までの時間�
 
 結果を表\ref{table:comparison}に示す。
 各列の数値は、左から順に
-\begin{itemize}
+\begin{enumerate}
   \item タスクの成功率
   \item タスク成功時の平均時間
   \item タスク成功時における障害物内を移動したパーティクル数 $\times$ 時間の平均時間
-\end{itemize}
+\end{enumerate}
 を表している。
 
 当然、ロボットの真の姿勢$\V{x}^{*}$を行動決定に使用した場合、タスクの成功率は$100\%$となっているが、
@@ -318,7 +317,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{true_pose.pdf}
-    \caption{Robot behavior by true pose.}
+    \caption{Robot behavior by true pose}
     \label{fig:true pose}
   \end{center}
 \end{figure}
@@ -332,7 +331,7 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{average_pose.pdf}
-    \caption{Robot behavior by particles average pose.}
+    \caption{Robot behavior by particles average pose}
     \label{fig:average pose}
   \end{center}
 \end{figure}
@@ -347,7 +346,7 @@ $t=12.7[\si{s}]$でひとつのパーティクルが障害物に入りそうに�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_good.pdf}
-    \caption{Robot behavior by PFC method with avoidance.}
+    \caption{Robot behavior by PFC method with avoidance}
     \label{fig:avoid pfc good}
   \end{center}
 \end{figure}
@@ -366,7 +365,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_kakukaku.pdf}
-    \caption{Robot behavior by PFC method with avoidance.}
+    \caption{Robot behavior by PFC method with avoidance}
     \label{fig:avoid pfc kakukaku}
   \end{center}
 \end{figure}
@@ -381,7 +380,7 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{pfc.pdf}
-    \caption{Robot behavior by normal PFC method.}
+    \caption{Robot behavior by normal PFC method}
     \label{fig:pfc}
   \end{center}
 \end{figure}
@@ -396,7 +395,7 @@ Q-MDP法の動作については、図\ref{fig:q-mdp}に示す。
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{q-mdp.pdf}
-    \caption{Robot behavior by Q-MDP method.}
+    \caption{Robot behavior by Q-MDP method}
     \label{fig:q-mdp}
   \end{center}
 \end{figure}

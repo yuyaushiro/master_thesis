@@ -2,8 +2,7 @@
 本章では, 提案した手法の評価を行う. 
 \ref{section:評価方法}節では, 評価方法について述べる. 
 \ref{section:実験条件}節では, シミュレーション実験の条件について述べる. 
-\ref{section:結果}節では, シミュレーション実験の結果を述べる. 
-\ref{section:考察}節では, 考察について述べる. 
+\ref{section:結果}節では, シミュレーション実験の結果と考察を述べる. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{評価方法} \label{section:評価方法}
@@ -69,10 +68,10 @@
 また, 環境の中央を原点とする$X-Y$座標系$\Sigma$を定義する. 
 $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている. 
 ゴールは$(0, 1)$の位置を中心とした, 半径$0.15[\si{m}]$の範囲内とする. 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{environment.pdf}
-    \caption{Environment map with one obstacle.}
+    \caption{Environment map with one obstacle}
     \label{fig:environment}
   \end{center}
 \end{figure}
@@ -84,17 +83,27 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている.
 逆に, 破線矢印のようにロボットが障害物に衝突した場合, タスク失敗とする. 
 また, $300[\si{s}]$の間ゴールへ入ることができなかった場合も, 同様にタスク失敗とする. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{task.pdf}
-    \caption{Task success and failure examples.}
+    \caption{Task success and failure examples}
     \label{fig:task}
   \end{center}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{ロボットの行動と初期姿勢}
-ロボットの行動は, $\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする. 
+ロボットの行動は, 図\ref{fig:ロボットの行動の種類}に示すような, 
+$\mathcal{A} = { fw, ccw, cw }$の3つから選択されるものとする. 
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=8cm, ]{ロボットの行動の種類.pdf}
+    \caption{Types of robot action}
+    \label{fig:ロボットの行動の種類}
+  \end{center}
+\end{figure}
+
 行動はそれぞれ, 
 \begin{itemize}
   \item $fw$: $(0.2 + 0.01\sigma) \si{[m/s]}$ の前進
@@ -130,13 +139,13 @@ $X$軸と$Y$軸はそれぞれ環境の縁と並行に設定されている.
   {r_{\rm time}}^{a}_{\bm{x}\bm{x}^{\prime}} = -\Delta t
 \end{equation}
 と設定する. ここで, $\Delta t$は, $1$ステップの離散時間を意味し, ロボットが一回の行動で移動する時間とする. 
-今回は, この$\Delta T$は$0.1[s]$とする. 
+今回は, この$\Delta t$は$0.1[s]$とする. 
 次に, 障害物内での移動に関する報酬を
 \begin{equation}
 \label{robot initial pose}
   {r_{\rm obstacle}}^{a}_{\bm{x}\bm{x}^{\prime}} = -c\Delta t
 \end{equation}
-と設定する. 状態遷移先が障t物だった場合, 負の報酬として移動時間$\Delta T$の$c$倍を与える. 
+と設定する. 状態遷移先が障害物だった場合, 負の報酬として移動時間$\Delta t$の$c$倍を与える. 
 MDPでは, 報酬は一元化する必要があるため, この2つの報酬を合わせて, 
 \begin{equation}
 \label{robot initial pose}
@@ -155,10 +164,34 @@ $c$は定数であり, 障害物へ入ることのペナルティー度合いを
 \url{https://github.com/ryuichiueda/simple_value_iteration_ros.git}
 のコードを利用して行った. 
 計算には, インテル Core i7 8550U/1.8GHz/4コアのCPUを搭載したコンピュータを用いて, 32分58秒かかった. 
+計算結果の一部を示している図\ref{fig:価値関数計算結果}は, 
+方向を$0 \leq \theta < 10 \si{[deg]}$で固定したときの, 各位置での価値を表している. 
+白が最も価値が高く, 色が濃くなるほど価値が低いことを意味する. 
+ゴールは価値が$0$であり, ゴール遠方や障害物内は低い価値となっていることが分かる. 
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=12cm, ]{価値関数計算結果.pdf}
+    \caption{Calculation result of state value function $(0 \leq \theta < 10 \si{[deg]})$}
+    \label{fig:価値関数計算結果}
+  \end{center}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{MCLの設定}
 MCLのパーティクル数$N$は, $500$で固定とする. 
+パーティクルの初期姿勢は, ロボットの初期配置のばらつきと同様に分布させる. 
+図\ref{fig:パーティクルの初期分布}に, タスク開始時のロボットの姿勢とパーティクルの分布の一例を示す. 
+パーティクルは正規分布に従いばらまかれ, ロボットも同様の正規分布に従い初期配置が行われる. 
+
+\begin{figure}[h]
+  \begin{center}
+    \includegraphics[width=12cm, ]{パーティクルの初期分布.pdf}
+    \caption{Example of initial distribution of particles and initial pose of robot}
+    \label{fig:パーティクルの初期分布}
+  \end{center}
+\end{figure}
+
 予測ステップにおけるパーティクルの状態遷移は, ロボットの運動モデルと同様とする. 
 ロボットは, タスクが終了したかどうかの情報を得ることができる. 
 この情報を計測による更新ステップで, パーティクルの重み$w^{(i)}$に反映する. 
@@ -209,11 +242,11 @@ $m$の値を変えたときの, タスクの達成率と達成までの時間の
 
 結果を表\ref{table:comparison}に示す. 
 各列の数値は, 左から順に
-\begin{itemize}
+\begin{enumerate}
   \item タスクの成功率
   \item タスク成功時の平均時間
   \item タスク成功時における障害物内を移動したパーティクル数 $\times$ 時間の平均時間
-\end{itemize}
+\end{enumerate}
 を表している. 
 
 当然, ロボットの真の姿勢$\V{x}^{*}$を行動決定に使用した場合, タスクの成功率は$100\%$となっているが, 
@@ -281,10 +314,10 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 軌跡が角張っているのは, 状態空間を離散化したときの粗さが影響していると考えられる. 
 今回は$\theta$を$10[\si{deg}]$ごとに離散化したが, もっと細かく離散化することで, 軌跡はなめらかなものになると予想される. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{true_pose.pdf}
-    \caption{Robot behavior by true pose.}
+    \caption{Robot behavior by true pose}
     \label{fig:true pose}
   \end{center}
 \end{figure}
@@ -295,10 +328,10 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 したがって, 障害物に突入することなくゴールへと向かっている. 
 一方で, 図の下部の試行では, $\V{x}^{*}$がインコース側を移動しているため, 障害物に衝突してしまっているのが分かる. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{average_pose.pdf}
-    \caption{Robot behavior by particles average pose.}
+    \caption{Robot behavior by particles average pose}
     \label{fig:average pose}
   \end{center}
 \end{figure}
@@ -310,10 +343,10 @@ Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$
 $t=12.7[\si{s}]$でひとつのパーティクルが障害物に入りそうになった際, $m^{(i)}_{\rm avoid}$の値が最大値となる. 
 ロボットはそのパーティクルの行動を最優先するように右旋回ののち前進し, パーティクルが障害物に侵入するのを防ぐ動作を行った. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_good.pdf}
-    \caption{Robot behavior by PFC method with avoidance.}
+    \caption{Robot behavior by PFC method with avoidance}
     \label{fig:avoid pfc good}
   \end{center}
 \end{figure}
@@ -329,10 +362,10 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 これを防ぐためには, 数ステップ先の動作までを含んで回避動作を考えるという方法が, 有効ではないかと予想される. 
 しかし, この計算はロボットが動作するリアルタイムで行える必要があるため, 計算量と時間の問題が発生すると考えられる. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{avoid_pfc_kakukaku.pdf}
-    \caption{Robot behavior by PFC method with avoidance.}
+    \caption{Robot behavior by PFC method with avoidance}
     \label{fig:avoid pfc kakukaku}
   \end{center}
 \end{figure}
@@ -344,10 +377,10 @@ $t=15.3[\si{s}]$でパーティクルが一つ障害物に侵入しそうにな�
 成功時と失敗時の違いは, パーティクルの平均姿勢$\bar{\V{x}}$を利用した行動と同様に, 真の姿勢$\V{x}^{*}$がアウトコース側に存在しているか否かである. 
 成功時の右のコマでは, 障害物を回避することに成功したのち, ゴールを探索する動作を行いタスク成功したことが分かる. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{pfc.pdf}
-    \caption{Robot behavior by normal PFC method.}
+    \caption{Robot behavior by normal PFC method}
     \label{fig:pfc}
   \end{center}
 \end{figure}
@@ -359,10 +392,10 @@ Q-MDP法の動作については, 図\ref{fig:q-mdp}に示す.
 成功時の動作では, 分布の中央付近に$\V{x}^{*}$が存在しているため, ゴールへ入ることができている. 
 しかし, Q-MDP法はゴールの探索動作を行わないため, 失敗時の動作ではゴール付近で行動が長時間停滞し失敗となる. 
 
-\begin{figure}[tbp]
+\begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{q-mdp.pdf}
-    \caption{Robot behavior by Q-MDP method.}
+    \caption{Robot behavior by Q-MDP method}
     \label{fig:q-mdp}
   \end{center}
 \end{figure}

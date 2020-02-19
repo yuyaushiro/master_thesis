@@ -1,0 +1,22 @@
+\chapter*{}\addcontentsline{toc}{chapter}{Summary}
+
+\section*{Summary}
+In this paper, we propose a method to make a robot perform an obstacle avoidance behavior considering the uncertainty of state estimation.
+Cognitive uncertainty is an inevitable problem in the real world, but humans and some living things can choose appropriate actions on uncertainty.
+In order for the robot to perform such intelligent actions, it is necessary to consider the uncertainty of information in the decision making algorithm.
+At present, many mobile robots adopt probability-based estimation that takes uncertainty into pose estimation.
+However, decision making does’t take uncertainty into acount.
+% The pose estimation expresses the pose by a probability distribution called a belief distribution.
+When estimating the pose of the robot, the robot expresses the pose by a probability distribution called a belief distribution.
+However, since only the pose with the highest probability is used for decision making, the size and shape of the distribution do not affect the motion.
+To solve this problem, there are some studies that use the belief distribution to decision making, and make robots take uncertainty into decision making.
+However, there is no research that considers the uncertainty of obstacle avoidance behavior, which is important for mobile robots.
+% The proposed method assumes a mobile robot that pose estimates using MCL, and avoids obstacles with all particles, thereby preventing the robot from colliding with obstacles.
+% In the proposed method, a mobile robot that pose estimates using MCL is assumed.
+The proposed method assumes a mobile robot that estimates its pose using MCL.
+All particles avoid obstacles, preventing the robot from colliding with obstacles.
+This operation is realized by temporarily increasing the influence of particles near an obstacle on the decision making.
+The effectiveness of the proposed method was confirmed by comparing with the conventional method the operation of the navigation task toward the goal while avoiding obstacles.
+
+\section*{Keywords}
+Autonomous mobile robot、POMDPs、probabilistic flow control method

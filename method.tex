@@ -9,7 +9,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{一般的な行動決定による障害物回避} \label{section:一般的な回避}
-多くの移動ロボットによる行動決定では、図\ref{一般的な行動決定}に示すように、
+多くの移動ロボットによる行動決定では、図\ref{fig:一般的な行動決定}に示すように、
 信念分布の中で最も確率の高い姿勢のみを行動決定に利用する。
 MCLで姿勢推定を行うロボットであれば、信念分布を近似するパーティクルの分布の中で、
 最も重みの大きいパーティクルを利用する。
@@ -19,16 +19,16 @@ MCLで姿勢推定を行うロボットであれば、信念分布を近似す�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=10cm, ]{一般的な行動決定.pdf}
-    \caption{Path planning for general mobile robot.}
+    \caption{Path planning for general mobile robot}
     \label{fig:一般的な行動決定}
   \end{center}
 \end{figure}
 
 \begin{figure}[h]
   \begin{center}
-    \includegraphics[width=10cm, ]{一般的な行動決定(MCL).pdf}
-    \caption{Path planning for a robot that localization using MCL.}
-    \label{fig:一般的な行動決定(MCL)}
+    \includegraphics[width=10cm, ]{一般的な行動決定MCL.pdf}
+    \caption{Path planning for a robot that localization using MCL}
+    \label{fig:一般的な行動決定MCL}
   \end{center}
 \end{figure}
 
@@ -43,7 +43,7 @@ MCLで姿勢推定を行うロボットであれば、信念分布を近似す�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=10cm, ]{障害物回避タスクの例.pdf}
-    \caption{Example of a task to avoid obstacle.}
+    \caption{Example of a task to avoid obstacle}
     \label{fig:障害物回避タスクの例}
   \end{center}
 \end{figure}
@@ -132,7 +132,7 @@ PFC法の利点である、ゴール付近で分布をゴールに流し込む�
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{地図の障害物.png}
-    \caption{Obstacles on the map.}
+    \caption{Obstacles on the map}
     \label{fig:地図の障害物}
   \end{center}
 \end{figure}
@@ -155,8 +155,10 @@ PFC法の利点である、ゴール付近で分布をゴールに流し込む�
 このように、離散化された状態空間における制御問題は、有限マルコフ決定過程(finite Markov decision process, finite MDP)と呼ばれる。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \subsection{報酬} \label{subsection:報酬}
-
+\subsection{報酬} \label{subsection:報酬}
+状態遷移に対する報酬について述べる。
+本論文では、障害物がない通常の領域への状態遷移に対する報酬$r^{a}_{ss^{\prime}}$については、状態遷移にかかる時間を$-\Delta t$とする。
+障害物内への状態遷移の報酬は、障害物以外での状態遷移報酬に対し、非常に小さい値とする。
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{価値反復}
@@ -221,6 +223,7 @@ PFC法において、行動を評価する式\ref{equation:pfc}は、離散の�
 $m^{(i)}_{\rm avoid}$の更新方法について述べる。
 $m^{(i)}_{\rm avoid}$は、タスクの実行中、状況に応じて
 \begin{equation}
+\label{equation:reward}
   m^{(i)}_{\rm avoid} =
   \left\{
     \begin{array}{l}
@@ -252,7 +255,7 @@ $m^{(i)}_{\rm avoid}$は、タスクの実行中、状況に応じて
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=12cm, ]{回避のループ.pdf}
-    \caption{Action stagnation due to repeated avoidance behavior.}
+    \caption{Action stagnation due to repeated avoidance behavior}
     \label{fig:回避のループ}
   \end{center}
 \end{figure}
