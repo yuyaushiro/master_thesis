@@ -249,6 +249,26 @@ $m$の値を変えたときの、タスクの達成率と達成までの時間�
 \end{enumerate}
 を表している。
 
+\begin{table}[H]
+  \begin{center}
+\label{table:comparison}
+\caption{Comparison of PFC with avoidance, nomal PFC, Q-MDP, and some other simulations.}
+\vspace{0.5cm}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Methods &
+  \begin{tabular}[c]{@{}c@{}}Successful\\ trials\end{tabular} &
+  \begin{tabular}[c]{@{}c@{}}Avg. of time\\ in successful trials\end{tabular} &
+  \begin{tabular}[c]{@{}c@{}}Avg. of the total time\\ of particles inside obstacle\\ in successful trials\end{tabular} \\ \midrule
+PFC with avoidance    & 99 $\%$ & 72.3 $[\si{s}]$ & 0.0    $[\si{s}]$ \\
+PFC                   & 51  $\%$ & 63.0 $[\si{s}]$ & 2587.1 $[\si{s}]$ \\
+Q-MDP                 & 40  $\%$ & 65.0 $[\si{s}]$ & 22.6   $[\si{s}]$ \\
+Decision based on $\bar{\V{x}}$  & 20  $\%$ & 38.9 $[\si{s}]$ & 898.9  $[\si{s}]$ \\
+Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$ \\ \bottomrule
+\end{tabular}
+  \end{center}
+\end{table}
+
 当然、ロボットの真の姿勢$\V{x}^{*}$を行動決定に使用した場合、タスクの成功率は$100\%$となっているが、
 パーティクルの平均姿勢$\bar{\V{x}}$を利用した行動決定では、タスクの成功率は$20\%$と低い値になっていることが分かる。
 2つの手法において、タスク成功時の平均時間はほぼ同様の時間である。
@@ -286,22 +306,6 @@ Q-MDP法では、パーティクルが障害物内を移動している時間が
 Q-MDP法は、通常のPFC法よりも分布が障害物内を避けるようにアウトコース側を移動するため、成功時の時間が少し短いと考えられる。
 提案手法では、パーティクルの分布全体が確実に障害物を避けるようにゴールへと向かうため、タスク達成までの時間は一番長くなってる。
 
-\begin{table}[H]
-\label{table:comparison}
-\caption{Comparison of PFC with avoidance, nomal PFC, Q-MDP, and some other simulations.}
-\begin{tabular}{@{}lccc@{}}
-\toprule
-Methods &
-  \begin{tabular}[c]{@{}c@{}}Successful\\ trials\end{tabular} &
-  \begin{tabular}[c]{@{}c@{}}Avg. of time\\ in successful trials\end{tabular} &
-  \begin{tabular}[c]{@{}c@{}}Avg. of the total time\\ of particles inside obstacle\\ in successful trials\end{tabular} \\ \midrule
-PFC with avoidance    & 99 $\%$ & 72.3 $[\si{s}]$ & 0.0    $[\si{s}]$ \\
-PFC                   & 51  $\%$ & 63.0 $[\si{s}]$ & 2587.1 $[\si{s}]$ \\
-Q-MDP                 & 40  $\%$ & 65.0 $[\si{s}]$ & 22.6   $[\si{s}]$ \\
-Decision based on $\bar{\V{x}}$  & 20  $\%$ & 38.9 $[\si{s}]$ & 898.9  $[\si{s}]$ \\
-Decision based on $\V{x}^{*}$   & 100 $\%$ & 39.6 $[\si{s}]$ & 994.5  $[\si{s}]$ \\ \bottomrule
-\end{tabular}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{生成された挙動の確認}
