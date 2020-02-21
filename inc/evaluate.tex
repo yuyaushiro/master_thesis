@@ -252,7 +252,7 @@ $m$の値を変えたときの, タスクの達成率と達成までの時間の
 \begin{table}[H]
   \begin{center}
 \label{table:comparison}
-\caption{Comparison of PFC with avoidance, nomal PFC, Q-MDP, and some other simulations.}
+\caption{Comparison of PFC with avoidance, nomal PFC, Q-MDP, and some other simulations}
 \vspace{0.5cm}
 \begin{tabular}{@{}lccc@{}}
 \toprule
@@ -289,7 +289,8 @@ $\V{x}^{*}$が分布から外れてしまった場合である.
 今回の実験条件では, ロボットの観測が制限されていたため, このような自体も起こり得る. 
 また, ロボットに搭載したセンサにより, 自己位置推定に役立つ観測を行える場合であっても, 分布が$\V{x}^{*}$と乖離する場合がある. 
 このような状態を「誘拐状態」と言い, 再度パーティクルを$\V{x}^{*}$の周辺に分布させることは困難とされている. 
-これは, 「ロボット誘拐問題」と呼ばれ, 復帰方法についてもいくつか研究が行われている\cite{lenser2000etal, aa}. 
+% これは, 「ロボット誘拐問題」と呼ばれ, 復帰方法についてもいくつか研究が行われている\cite{lenser2000etal, 上田etal2005b}. 
+これは, 「ロボット誘拐問題」と呼ばれ, 復帰方法についてもいくつか研究が行われている\cite{lenser2000etal}. 
 本評価においては, $\V{x}^{*}$が分布ないに存在していることを前提とし, 誘拐状態からの回復アルゴリズムを実装していないため, 
 タスクの失敗へとつながった. 
 

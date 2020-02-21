@@ -13,10 +13,11 @@
 
 \begin{eabstract}
 In this paper, we propose a method to make a robot perform an obstacle avoidance behavior considering the uncertainty of state estimation.
-Cognitive uncertainty is an inevitable problem in the real world, but humans and some living things can choose appropriate actions on uncertainty.
-In order for the robot to perform such intelligent actions, it is necessary to consider the uncertainty of information in the decision making algorithm.
+Cognitive uncertainty is an inevitable problem in the real world.
+However, humans and some living things can choose appropriate actions on uncertainty.
+In order for the robot to perform such intelligent actions, it is necessary to consider the uncertainty of information in a decision making algorithm.
 At present, many mobile robots adopt probability-based estimation that takes uncertainty into pose estimation.
-However, decision making does’t take uncertainty into acount.
+However, decision making does not take uncertainty into acount.
 % The pose estimation expresses the pose by a probability distribution called a belief distribution.
 When estimating the pose of the robot, the robot expresses the pose by a probability distribution called a belief distribution.
 However, since only the pose with the highest probability is used for decision making, the size and shape of the distribution do not affect the motion.
@@ -27,7 +28,9 @@ However, there is no research that considers the uncertainty of obstacle avoidan
 The proposed method assumes a mobile robot that estimates its pose using MCL.
 All particles avoid obstacles, preventing the robot from colliding with obstacles.
 This operation is realized by temporarily increasing the influence of particles near an obstacle on the decision making.
-The effectiveness of the proposed method was confirmed by comparing with the conventional method the operation of the navigation task toward the goal while avoiding obstacles.
+% The effectiveness of the proposed method was confirmed by comparing with the conventional method the operation of the navigation task toward the goal while avoiding obstacles.
+% The effectiveness of the proposed method was confirmed by comparing the operation of the navigation task toward the goal while avoiding obstacles.
+The effectiveness of the proposed method was confirmed by comparing the operation of the navigation task to the goal avoiding obstacles with the conventional method.
 \end{eabstract}
 
 % \section*{Keywords}

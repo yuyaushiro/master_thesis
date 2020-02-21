@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  19 FEB 2020 23:12
+This is e-upTeX, Version 3.14159265-p3.8.2-u1.25-190131-2.6 (utf8.uptex) (TeX Live 2019) (preloaded format=uplatex 2019.12.6)  20 FEB 2020 10:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -744,11 +744,7 @@ File: ./figs/価値関数計算結果.pdf Graphic file (type pdf)
  [27]
 File: ./figs/パーティクルの初期分布.pdf Graphic file (type pdf)
 <./figs/パーティクルの初期分布.pdf>
- [28] [29] [30]
-
-LaTeX Warning: Citation `aa' on page 31 undefined on input line 292.
-
-[31]
+ [28] [29] [30] [31]
 File: ./figs/true_pose.pdf Graphic file (type pdf)
 <./figs/true_pose.pdf>
  [32]
@@ -766,7 +762,8 @@ File: ./figs/pfc.pdf Graphic file (type pdf)
  [36]
 File: ./figs/q-mdp.pdf Graphic file (type pdf)
 <./figs/q-mdp.pdf>
- [37]) [38]
+
+[37]) [38]
 \openout2 = `inc/conclusion.aux'.
 
  (./inc/conclusion.tex
@@ -782,9 +779,6 @@ File: ./figs/q-mdp.pdf Graphic file (type pdf)
 (./inc/preface.aux) (./inc/introduction.aux) (./inc/mcl.aux) (./inc/pomdp.aux)
 (./inc/method.aux) (./inc/evaluate.aux) (./inc/conclusion.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
@@ -797,4 +791,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  37i,16n,40p,373b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp.dvi (50 pages, 140236 bytes).
+Output written on tmp.dvi (50 pages, 140200 bytes).
