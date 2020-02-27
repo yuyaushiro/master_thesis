@@ -1,0 +1,25 @@
+\addvspace {10\jsc@mpt }
+\addvspace {10\jsc@mpt }
+\addvspace {10\jsc@mpt }
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Path planning for general mobile robot}}{16}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Path planning for a robot that localization using MCL}}{16}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Example of a task to avoid obstacle}}{17}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Collision risk due to general obstacle avoidance behavior}}{18}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Obstacle avoidance considering uncertainty}}{19}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Overview of the method}}{20}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Obstacles on the map}}{22}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Action stagnation due to repeated avoidance behavior}}{25}%
+\addvspace {10\jsc@mpt }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Environment map with one obstacle}}{29}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Task success and failure examples}}{30}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Types of robot action}}{31}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Calculation result of state value function $(0 \leq \theta < 10 \si {[deg]})$}}{33}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Example of initial distribution of particles and initial pose of robot}}{34}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Robot behavior by true pose}}{38}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Robot behavior by particles average pose}}{39}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Robot behavior by PFC method with avoidance}}{40}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Robot behavior by PFC method with avoidance}}{41}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Robot behavior by normal PFC method}}{42}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Robot behavior by Q-MDP method}}{43}%
+\addvspace {10\jsc@mpt }

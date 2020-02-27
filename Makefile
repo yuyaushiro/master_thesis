@@ -29,8 +29,10 @@ main.pdf: main.dvi
 main.dvi: main.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' main.tex > tmp.tex
 	mkdir -p inc
+	sed -e 's/。/. /g' -e 's/、/, /g' titlepage.tex > inc/titlepage.tex
 	# sed -e 's/。/. /g' -e 's/、/, /g' summary_ja.tex > inc/summary_ja.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' summary.tex > inc/summary.tex
+	sed -e 's/。/. /g' -e 's/、/, /g' abstract.tex > inc/abstract.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' preface.tex > inc/preface.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' introduction.tex > inc/introduction.tex
 	sed -e 's/。/. /g' -e 's/、/, /g' mcl.tex > inc/mcl.tex
